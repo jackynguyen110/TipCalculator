@@ -30,6 +30,9 @@ class SettingViewController: UIViewController {
         
     }
 
+    @IBAction func cancelSetting(sender: AnyObject) {
+         self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     @IBAction func saveSetting(sender: AnyObject) {
        
         themeIndex = selectTheme.selectedSegmentIndex

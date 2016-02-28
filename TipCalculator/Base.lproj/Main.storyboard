@@ -67,6 +67,7 @@
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="aog-Ug-EVX" appends="YES" id="Ve2-qc-Qyn"/>
+                                    <outletCollection property="gestureRecognizers" destination="zPm-nN-Qf3" appends="YES" id="d0D-ST-sgz"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Os-uc-l48">
@@ -146,6 +147,7 @@
                         <action selector="onTap:" destination="BYZ-38-t0r" id="FP4-E1-Cuj"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="zPm-nN-Qf3"/>
             </objects>
             <point key="canvasLocation" x="637" y="220"/>
         </scene>
@@ -167,8 +169,11 @@
                                     <accessibilityTraits key="traits" selected="YES"/>
                                 </accessibility>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kQu-49-OZ7">
-                                <rect key="frame" x="20" y="117" width="280" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kQu-49-OZ7">
+                                <rect key="frame" x="20" y="116" width="280" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Ik8-Sv-q8z"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Default"/>
                                     <segment title="BlueTheme"/>
@@ -176,8 +181,11 @@
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sEz-oM-29w">
-                                <rect key="frame" x="20" y="182" width="280" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sEz-oM-29w">
+                                <rect key="frame" x="20" y="181" width="280" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="T2s-Q4-at5"/>
+                                </constraints>
                                 <segments>
                                     <segment title="10%"/>
                                     <segment title="15%"/>
@@ -185,36 +193,69 @@
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlI-tX-ezd">
-                                <rect key="frame" x="20" y="88" width="101" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlI-tX-ezd">
+                                <rect key="frame" x="20" y="88" width="101" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="5hf-jR-5UQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Percent default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-M5-wLZ">
-                                <rect key="frame" x="20" y="153" width="117" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percent default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-M5-wLZ">
+                                <rect key="frame" x="20" y="152" width="117" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="Y5D-5n-V98"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6Z-EU-Ne3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6Z-EU-Ne3">
                                 <rect key="frame" x="20" y="256" width="131" height="30"/>
                                 <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9Da-Ki-rpz"/>
+                                    <constraint firstAttribute="width" constant="131" id="x3t-fo-CEG"/>
+                                </constraints>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveSetting:" destination="7LE-qB-aaj" eventType="touchUpInside" id="VLe-Lt-j1j"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoI-wz-Fpx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoI-wz-Fpx">
                                 <rect key="frame" x="171" y="256" width="129" height="30"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="K6O-NM-vyr"/>
+                                    <constraint firstAttribute="width" constant="129" id="ZwW-1W-8Bb"/>
+                                </constraints>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelSetting:" destination="7LE-qB-aaj" eventType="touchUpInside" id="hAv-K0-Cad"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
                             <accessibilityTraits key="traits" button="YES"/>
                         </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sEz-oM-29w" secondAttribute="trailing" constant="20" id="5Nj-dI-9EK"/>
+                            <constraint firstAttribute="trailing" secondItem="kQu-49-OZ7" secondAttribute="trailing" constant="20" id="5w4-gB-dtI"/>
+                            <constraint firstItem="ZlI-tX-ezd" firstAttribute="leading" secondItem="gnY-Lv-x80" secondAttribute="leading" constant="20" id="985-NJ-5Qx"/>
+                            <constraint firstItem="BzL-M5-wLZ" firstAttribute="leading" secondItem="gnY-Lv-x80" secondAttribute="leading" constant="20" id="Bfp-cq-iUz"/>
+                            <constraint firstItem="kQu-49-OZ7" firstAttribute="leading" secondItem="gnY-Lv-x80" secondAttribute="leading" constant="20" id="JMe-oY-3T1"/>
+                            <constraint firstItem="kQu-49-OZ7" firstAttribute="top" secondItem="ZlI-tX-ezd" secondAttribute="bottom" constant="8" id="KYo-XM-hVJ"/>
+                            <constraint firstItem="PoI-wz-Fpx" firstAttribute="top" secondItem="sEz-oM-29w" secondAttribute="bottom" constant="47" id="LDX-26-jii"/>
+                            <constraint firstItem="ZlI-tX-ezd" firstAttribute="top" secondItem="6hi-pR-oPi" secondAttribute="bottom" constant="24" id="VYh-5r-LrN"/>
+                            <constraint firstItem="h6Z-EU-Ne3" firstAttribute="leading" secondItem="gnY-Lv-x80" secondAttribute="leading" constant="20" id="Xdf-5x-5sD"/>
+                            <constraint firstItem="sEz-oM-29w" firstAttribute="top" secondItem="BzL-M5-wLZ" secondAttribute="bottom" constant="8" id="XnC-mh-d62"/>
+                            <constraint firstItem="sEz-oM-29w" firstAttribute="leading" secondItem="gnY-Lv-x80" secondAttribute="leading" constant="20" id="e9H-nl-hFf"/>
+                            <constraint firstAttribute="trailing" secondItem="PoI-wz-Fpx" secondAttribute="trailing" constant="20" id="jjz-ZA-fRx"/>
+                            <constraint firstItem="BzL-M5-wLZ" firstAttribute="top" secondItem="kQu-49-OZ7" secondAttribute="bottom" constant="8" id="rwx-45-sjP"/>
+                            <constraint firstItem="h6Z-EU-Ne3" firstAttribute="top" secondItem="sEz-oM-29w" secondAttribute="bottom" constant="47" id="sS7-yD-9e1"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Item" id="mRc-X0-Mwl"/>

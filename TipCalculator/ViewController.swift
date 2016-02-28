@@ -85,6 +85,8 @@ class ViewController: UIViewController {
             percentSegment.selectedSegmentIndex = percent as! Int
             
         }
+        
+        calTipAndTotal()
 
     }
     
