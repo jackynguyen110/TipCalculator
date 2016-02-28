@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12C922D91C82C7020085DD7D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		12C922D91C82C7020085DD7D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = TipCalculator/.gitignore; sourceTree = "<group>"; };
 		12C997981C7FCF0B006A95ED /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C9979B1C7FCF0B006A95ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12C9979D1C7FCF0B006A95ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +44,7 @@
 		12C9978F1C7FCF0B006A95ED = {
 			isa = PBXGroup;
 			children = (
+				12C922D91C82C7020085DD7D /* .gitignore */,
 				12C9979A1C7FCF0B006A95ED /* TipCalculator */,
 				12C997991C7FCF0B006A95ED /* Products */,
 			);
@@ -68,7 +69,6 @@
 				12C997A71C7FCF0B006A95ED /* Info.plist */,
 				12CA4DF71C80927E00B9991A /* SettingViewController.swift */,
 				12CA4DF91C813AF800B9991A /* Style.swift */,
-				12C922D91C82C7020085DD7D /* .gitignore */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
