@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C922DA1C82C7020085DD7D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 12C922D91C82C7020085DD7D /* .gitignore */; };
 		12C9979C1C7FCF0B006A95ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9979B1C7FCF0B006A95ED /* AppDelegate.swift */; };
 		12C9979E1C7FCF0B006A95ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9979D1C7FCF0B006A95ED /* ViewController.swift */; };
 		12C997A11C7FCF0B006A95ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C9979F1C7FCF0B006A95ED /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12C922D91C82C7020085DD7D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		12C997981C7FCF0B006A95ED /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C9979B1C7FCF0B006A95ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12C9979D1C7FCF0B006A95ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				12C997A71C7FCF0B006A95ED /* Info.plist */,
 				12CA4DF71C80927E00B9991A /* SettingViewController.swift */,
 				12CA4DF91C813AF800B9991A /* Style.swift */,
+				12C922D91C82C7020085DD7D /* .gitignore */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C922DA1C82C7020085DD7D /* .gitignore in Resources */,
 				12C997A61C7FCF0B006A95ED /* LaunchScreen.storyboard in Resources */,
 				12C997A31C7FCF0B006A95ED /* Assets.xcassets in Resources */,
 				12C997A11C7FCF0B006A95ED /* Main.storyboard in Resources */,
